@@ -6,6 +6,6 @@ categories: Munki MDM Tool
 ---
 [Where to download Munki](https://github.com/munki/munki)
 
-![MSC](/assets/images/san-juan-mountains.jpg "")
+![MSC](/assets/images/MSC.jpg "")
 
 **Munki**
