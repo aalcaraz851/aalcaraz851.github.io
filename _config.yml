@@ -21,9 +21,9 @@
 title: Welcome Technology Central
 email: Andrew.Alcaraz.851@my.csun.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hello, welcome to my Jekyll website, Every week I will be posting differnt 
+  blog about technology I've learned. Every week it can be different so stay tuned and
+  more excited technolgy will come to this site. Stay positive and Smile.
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
