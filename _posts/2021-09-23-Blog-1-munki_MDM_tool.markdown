@@ -1,43 +1,61 @@
 ---
 layout: post
-title:  "Managed software installation for macOS"
-date:   2021-09-08 11:58:57 -0700
+title:  "Setting up Munki in MacOS server"
+date:   2021-09-023 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 [Where to download Munki](https://github.com/munki/munki)
 
 <img src="https://raw.githubusercontent.com/wiki/munki/munki/images/managed_software_center.png" alt="MSC" width="460" height="345">
+	<head>
+		<style>
+		body {
+			background-image: url('https://giphy.com/gifs/90s-80s-illustration-l0HlNaQ6gWfllcjDO/fullscreen');
+			background-repeat: no-repeat;
+			background-attachment: fixed;  
+			background-size: cover;
+			border-radius: 50px;
+			margin-left: 120px;
+			margin-right: 120px;
+			font-family: arial, sans-serif;
+		}	
+		</style>
+	</head>
 
-https://giphy.com/gifs/90s-80s-illustration-l0HlNaQ6gWfllcjDO/fullscreen
-<h1>What is Munki?</h1>
 
-Munki is a Walt Disney Animation Studios open source project.
+<h1>Seeting up your inviroment</h1>
+Munki can run on almost any web server, and macOS comes with Apache 2, so setting up a demonstration Munki server on any accessible Mac is a breeze. You can even run a Munki server and a Munki client on the same computer, which is what we'll do here. Munki will be installed on a macOS computer that does not have Server.app installed. To get started if you don’t have a second computer you can also use a vm for this example. 
 
-Munki is a suite of tools that macOS administrators can use in conjunction 
-with a webserver-based repository of packages and package metadata to manage 
-software installs (and, in many cases, deletions) on macOS client workstations.
+<h1>Things needed to set up</h1>
+1. Server machine Mac computer
+2. Client machine (VM Mac OS or another Mac computer)
+3. Munki installed in local computer
 
-Munki can install software that has been packed in the Apple package format, 
-as well as deployment packages and drag-and-drop disk images.Munki can also be 
-set up to install Apple Software Updates from either Apple's or your own server.
-Munki is used to manage software for tens of thousands of Macs in enterprises 
-all around the world.
+<h1>Building your Munki Repo Sever</h1>
+Now construct a directory structure in /Users/Shared for the Munki "server" and then configure Apache2 to serve it over HTTP. The following steps may be completed in either Finder or Terminal, although it's easier to type them down as Terminal commands:
 
-<h1>What Munki Does?</h1>
-Munki is a collection of client-side utilities, most of which are built in Python. 
-Munki can use any web server on the server side. On every platform, you can utilize 
-any current web server that is available. On the web server, you do not need to install 
-any Munki-specific application, but you must be capable of creating directories and files.
-Munki can install software given as regular Apple packages - the same kind of products, 
-disk images, and a variety of applications such as Adobe, Chrome, text editors, and a 
-variety of other helpful programs. Munki has the ability to uninstall the program it has 
-installed. Optional installs for devices allow you to control what is required for the computer, 
-as well as update all software presently installed in Munki to the most recent version. 
-Munki can also be set up to install Apple Software Updates.
- 
-<h1>What Munki cant do?</h1>
+cd /Users/Shared/
+mkdir munki_repo
+mkdir munki_repo/catalogs
+mkdir munki_repo/icons
+mkdir munki_repo/manifests
+mkdir munki_repo/pkgs
+mkdir munki_repo/pkgsinfo
 
-Many of the commercial mixtures for program arrangement in addtion supply mixtures for other 
-surface of Mac management. Munki can't not. Munki focuses only on program deployment. If you need  
-imaging, inventory, remote assistance, and preference management you will have to look for other useful programs.
+Next Apache 2 has to read and traverse all of these directories:
+chmod -R a+rX munki_repo
+
+The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.
+
+sudo ln -s /Users/Shared/munki_repo /Library/WebServer/Documents/
+
+This builds a symlink to the new munki repo directory within /Library/WebServer/Documents/. On macOS, the DocumentRoot for Apache 2 is set to /Library/WebServer/Documents/, which means it will serve anything in that directory over HTTP.
+
+Now to turn on Apache 2:
+sudo apachectl start
+
+To reverse this change: 
+sudo apachectl stop
+
+The munki server is now working !
 
