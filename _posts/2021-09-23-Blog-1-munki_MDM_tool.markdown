@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Setting up Munki in MacOS server"
+title:  "Blog-1-Setting up Munki in MacOS server"
 date:   2021-09-23 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<img src="https://giphy.com/gifs/90s-80s-illustration-l0HlNaQ6gWfllcjDO/fullscreen" alt="MSC" width="460" height="345">
+<img src="https://raw.githubusercontent.com/wiki/munki/munki/images/managed_software_center.png" alt="MSC" width="460" height="345">
 
 
 
