@@ -20,27 +20,27 @@ Munki can run on almost any web server, and macOS comes with Apache 2, so settin
 <h1>Building your Munki Repo Sever</h1>
 Now construct a directory structure in /Users/Shared for the Munki "server" and then configure Apache2 to serve it over HTTP. The following steps may be completed in either Finder or Terminal, although it's easier to type them down as Terminal commands:
 
-cd /Users/Shared/
-mkdir munki_repo
-mkdir munki_repo/catalogs
-mkdir munki_repo/icons
-mkdir munki_repo/manifests
-mkdir munki_repo/pkgs
-mkdir munki_repo/pkgsinfo
+<p>cd /Users/Shared/</p>
+<p>mkdir munki_repo</p>
+<p>mkdir munki_repo/catalogs</p>
+<p>mkdir munki_repo/icons</p>
+<p>mkdir munki_repo/manifests</p>
+<p>mkdir munki_repo/pkgs</p>
+<p>mkdir munki_repo/pkgsinfo</p>
 
-Next Apache 2 has to read and traverse all of these directories:
+<h3>Next Apache 2 has to read and traverse all of these directories:</h3>
 chmod -R a+rX munki_repo
 
-The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.
+<h3>The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.</h3>
 
 sudo ln -s /Users/Shared/munki_repo /Library/WebServer/Documents/
 
-This builds a symlink to the new munki repo directory within /Library/WebServer/Documents/. On macOS, the DocumentRoot for Apache 2 is set to /Library/WebServer/Documents/, which means it will serve anything in that directory over HTTP.
+<h3>This builds a symlink to the new munki repo directory within /Library/WebServer/Documents/. On macOS, the DocumentRoot for Apache 2 is set to /Library/WebServer/Documents/, which means it will serve anything in that directory over HTTP.</h3>
 
-Now to turn on Apache 2:
+<h3>Now to turn on Apache 2:</h3>
 sudo apachectl start
 
-To reverse this change: 
+<h3>To reverse this change: </h3>
 sudo apachectl stop
 
 The munki server is now working !
