@@ -28,19 +28,19 @@ Now construct a directory structure in /Users/Shared for the Munki "server" and 
 <p>mkdir munki_repo/pkgs</p>
 <p>mkdir munki_repo/pkgsinfo</p>
 
-<h3>Next Apache 2 has to read and traverse all of these directories:</h3>
+<h4>Next Apache 2 has to read and traverse all of these directories:</h4>
 chmod -R a+rX munki_repo
 
-<h3>The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.</h3>
+<h4>The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.</h4>
 
 sudo ln -s /Users/Shared/munki_repo /Library/WebServer/Documents/
 
-<h3>This builds a symlink to the new munki repo directory within /Library/WebServer/Documents/. On macOS, the DocumentRoot for Apache 2 is set to /Library/WebServer/Documents/, which means it will serve anything in that directory over HTTP.</h3>
+<h4>This builds a symlink to the new munki repo directory within /Library/WebServer/Documents/. On macOS, the DocumentRoot for Apache 2 is set to /Library/WebServer/Documents/, which means it will serve anything in that directory over HTTP.</h4>
 
-<h3>Now to turn on Apache 2:</h3>
+<h4>Now to turn on Apache 2:</h4>
 sudo apachectl start
 
-<h3>To reverse this change: </h3>
+<h4>To reverse this change: </h4>
 sudo apachectl stop
 
 The munki server is now working !
