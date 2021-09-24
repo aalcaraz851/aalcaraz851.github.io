@@ -28,7 +28,7 @@ Now construct a directory structure in /Users/Shared for the Munki "server" and 
 <p>mkdir munki_repo/pkgs</p>
 <p>mkdir munki_repo/pkgsinfo</p>
 
-<h4>Next Apache 2 has to read and traverse all of these directories:</h4>
+<h3>Next Apache 2 has to read and traverse all of these directories:</h3>
 chmod -R a+rX munki_repo
 
 <h4>The next step is to inform Apache2 to use HTTP to serve the munki repo directory. You could change the /etc/apache2/httpd.conf file, or any of Apache2's other.conf files.</h4>
