@@ -1,26 +1,12 @@
 ---
 layout: post
 title:  "Setting up Munki in MacOS server"
-date:   2021-09-023 11:58:57 -0700
+date:   2021-09-23 11:58:57 -0700
 categories: Munki MDM Tool
 ---
-[Where to download Munki](https://github.com/munki/munki)
 
 <img src="https://raw.githubusercontent.com/wiki/munki/munki/images/managed_software_center.png" alt="MSC" width="460" height="345">
-	<head>
-		<style>
-		body {
-			background-image: url('https://giphy.com/gifs/90s-80s-illustration-l0HlNaQ6gWfllcjDO/fullscreen');
-			background-repeat: no-repeat;
-			background-attachment: fixed;  
-			background-size: cover;
-			border-radius: 50px;
-			margin-left: 120px;
-			margin-right: 120px;
-			font-family: arial, sans-serif;
-		}	
-		</style>
-	</head>
+
 
 
 <h1>Seeting up your inviroment</h1>
