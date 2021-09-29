@@ -5,7 +5,7 @@ date:   2021-09-23 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<img src="https://raw.githubusercontent.com/wiki/munki/munki/images/managed_software_center.png" alt="MSC" width="460" height="345">
+<img src="http://www.amsys.co.uk/wp-content/uploads/munki-repo.jpg" alt="MSC" width="460" height="345">
 
 
 
@@ -43,5 +43,6 @@ sudo apachectl start
 <h4>To reverse this change: </h4>
 sudo apachectl stop
 
+<h4>127.0.0.1/munki_repo</h4>
 The munki server is now working !
 
