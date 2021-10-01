@@ -9,7 +9,7 @@ categories: Munki MDM Tool
 
 
 
-<h1>Seeting up your inviroment</h1>
+<h1>Setting up your environment</h1>
 Munki can run on almost any web server, and macOS comes with Apache 2, so setting up a demonstration Munki server on any accessible Mac is a breeze. You can even run a Munki server and a Munki client on the same computer, which is what we'll do here. Munki will be installed on a macOS computer that does not have Server.app installed. To get started if you don’t have a second computer you can also use a vm for this example. 
 
 <h1>Things needed to set up</h1>
