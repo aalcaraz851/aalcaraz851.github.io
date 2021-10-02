@@ -34,9 +34,9 @@ sudo /usr/local/munki/managedsoftwareupdate
 
 if you need to remove the app the command is:
 sudo rm –r /Applications/Firefox.app
-<h2>3.</h2>
+<h2>4.</h2>
 The final step is to test if managed Software Center.app works. This App will be shown to the client will therotially have applications managed by the server.
 
-<h2>4.</h2>
+<h2>5.</h2>
 To locate the app we can hit the command and search bar and type "Manage software center". This will App will have any apps loaded by the server, at the moment we dont have any but in my next blog there will be more information how do import.
 https://github.com/munki/munki/wiki/Demonstration-Setup
