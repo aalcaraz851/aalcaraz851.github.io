@@ -23,15 +23,15 @@ Now, let’s get a package to import. Google is a good example package, and you 
 <p><b>
 <dl>
 <dt>bash-3.2$ /usr/local/munki/munkiimport ~/Downloads/Chrome\ 94.0.4606.71.dmg </dt>
-           <dd>Item name: Chrome</dd> 
-        <dd>Display name: Chrome</dd>
-        <dd> Description: Web browser from Google</dd>
-             <dd>Version: 94.0.4606.71</dd>
-            <dd>Category: Internet</dd>
-           <dd>Developer: Google</dd>
-  <dd>Unattended install: False</dd>
+<dd>Item name: Chrome</dd> 
+<dd>Display name: Chrome</dd>
+<dd> Description: Web browser from Google</dd>
+<dd>Version: 94.0.4606.71</dd>
+<dd>Category: Internet</dd>
+<dd>Developer: Google</dd>
+<dd>Unattended install: False</dd>
 <dd>Unattended uninstall: False</dd>
-            <dd>Catalogs: testing </dd>   
+<dd>Catalogs: testing </dd>   
 <dt>Import this item? [y/n] y</dt>
 <dt>Upload item to subdirectory path []: apps/google</dt>
 <dt>Path /Users/Shared/munki_repo/pkgs/apps/google doesn't exist. Create it? [y/n] y</dt>
@@ -50,12 +50,12 @@ If you want to import the item, write yes, and if there are any faults, type no.
 
  munkiimport copies the Google package to /Users/Shared/munki_repo/pkgs/apps/google and saves the pkginfo to /Users/Shared/munki_repo/pkgs/apps/google/Chrome 94.0.4606.71.dmg.
 
-<dd>Rebuild catalogs? [y/n]</dd> 
+<p><b>Rebuild catalogs? [y/n]</b></p>
 
 Munki clients do not use particular pkginfo files to locate accessible software; instead, they obtain and review Munki catalogs. So, in order to use the pkginfo we just created, we'll need to rebuild all of the specified catalogs with new versions. Munkiimport rebuilds the Munki catalogs if you answer "yes" to this popup.
 
-<dt>Rebuild catalogs? [y/n] y</dt>
-<dd>Adding apps/mozilla/Firefox-61.0.2 to testing...</dd>
+<p><b>Rebuild catalogs? [y/n] y
+Adding apps/mozilla/Firefox-61.0.2 to testing...</b></p>
 
-We notice a single piece has been uploaded to the testing catalog because our Munki repo only includes one package (and its accompanying pkginfo). We may go through our previous work one more. Go to http://localhost/munki repo/catalogs/testing in your browser. A property list should appear, containing the pkginfo for Chrome.
+Notice a single piece has been uploaded to the testing catalog because our Munki repo only includes one package (and its accompanying pkginfo). We may go through our previous work one more. Go to http://localhost/munki repo/catalogs/testing in your browser. A property list should appear, containing the pkginfo for Chrome.
 
