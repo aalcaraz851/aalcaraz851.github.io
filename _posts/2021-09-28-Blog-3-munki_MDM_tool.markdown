@@ -20,6 +20,7 @@ The location to the Munki repo is initially requested, and since we set one up a
 After that, you'll be asked to choose an editor for the pkginfo files. You can use /usr/bin/vi, /usr/bin/emacs, or BBedit if you prefer command-line editors.
 
 Now, let’s get a package to import. Google is a good example package, and you can download it from http://www.google.com/.
+<p><b>
 <dl>
 <dt>bash-3.2$ /usr/local/munki/munkiimport ~/Downloads/Chrome\ 94.0.4606.71.dmg </dt>
            <dd>Item name: Chrome</dd> 
@@ -42,6 +43,7 @@ Now, let’s get a package to import. Google is a good example package, and you 
 <dt>Edit pkginfo before upload? [y/n]: y</dt>
 <dd>Saving pkginfo to /Users/Shared/munki_repo/pkgsinfo/apps/google/Chrome 94.0.4606.71.dmg...</dd>
 </dl>
+</b></p>
 
 Then, using the munki "munkiimport" tool, point it to the disk image we just downloaded.
 If you want to import the item, write yes, and if there are any faults, type no.
