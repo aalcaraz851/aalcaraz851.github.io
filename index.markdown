@@ -7,8 +7,8 @@ layout: home
 <style>
 body {
 
-    background-color: #09F9F0;
-    color: #09F9F0; 
+    background-color: #FBE492;
+    color: #000000; 
 }
 
 </style>

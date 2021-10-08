@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog-3-Munki-Import-Configuration"
-date:   2021-09-28 11:58:57 -0700
+date:   2021-10-08 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
@@ -54,8 +54,8 @@ If you want to import the item, write yes, and if there are any faults, type no.
 
 Munki clients do not use particular pkginfo files to locate accessible software; instead, they obtain and review Munki catalogs. So, in order to use the pkginfo we just created, we'll need to rebuild all of the specified catalogs with new versions. Munkiimport rebuilds the Munki catalogs if you answer "yes" to this popup.
 
-<p><b>Rebuild catalogs? [y/n] y
-Adding apps/mozilla/Firefox-61.0.2 to testing...</b></p>
+<p><b>Rebuild catalogs? [y/n] y</b></p>
+<p><b>Adding apps/mozilla/Firefox-61.0.2 to testing...</b></p>
 
 Notice a single piece has been uploaded to the testing catalog because our Munki repo only includes one package (and its accompanying pkginfo). We may go through our previous work one more. Go to http://localhost/munki repo/catalogs/testing in your browser. A property list should appear, containing the pkginfo for Chrome.
 
