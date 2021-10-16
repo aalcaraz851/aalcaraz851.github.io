@@ -5,7 +5,7 @@ date:   2021-10-13 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<img src="https://www.techrepublic.com/a/hub/i/r/2018/11/21/a1010cf1-5bb8-4cb9-b89b-ca8db7594479/resize/1200x/6b354ad0745f0bd6902979de92f2ca05/201845figure-k.jpg" alt="MSC" width="460" height="345">
+<img src="http://www.amsys.co.uk/wp-content/uploads/munki-admin-packages-java.png" alt="MSC" width="460" height="345">
 
 
 
