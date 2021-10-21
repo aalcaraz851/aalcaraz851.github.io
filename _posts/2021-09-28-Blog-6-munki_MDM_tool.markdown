@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog-6-Munki"
-date:   2021-10-22 11:58:57 -0700
+date:   2021-10-29 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
