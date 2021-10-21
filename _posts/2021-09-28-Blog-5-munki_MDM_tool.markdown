@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog-5-Munki"
+title:  "Blog-5-Munki-Included Manifest"
 date:   2021-10-22 11:58:57 -0700
 categories: Munki MDM Tool
 ---
