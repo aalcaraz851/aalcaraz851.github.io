@@ -9,7 +9,7 @@ categories: Munki MDM Tool
 
 
 
-<h1>What is the Included Manifest option in Munki?</h>
+<h1>What is the Included Manifest option in Munki?</h1>
 You can launch Munki objects to two or more manifests without keeping them 
 identical by using an included manifest.
 
@@ -26,6 +26,7 @@ Managed Uninstalls: This Unistalls a program from a user with out prompt them. I
  output instead of using Managed Software Center.
 
 <h3>Munki Logs </h3>
+
 Munki has logs to look into when running installs, munki import or anything you would see if an error comes up. In the command line run on the client device :
 
 managedsoftwareupdate -vvv --checkonly
