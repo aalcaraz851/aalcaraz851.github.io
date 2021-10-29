@@ -18,7 +18,8 @@ care of for you but Munki also can deploy packages. Packages are a bit more comp
 Packages can deliver several payloads (copy files to various locations). They can also run
 scripts and packages leave receipts.
 
-Import a package
+<h3>Import a package</h3>
+
 Go to https://github.com/homebysix/docklib/releases/latest and download the latest docklib
 .pkg (at the time of this writing, it's docklib-1.3.0.pkg).
 Just as you did with the previous downloads, use munkiimport to import the .pkg you
@@ -31,14 +32,19 @@ By default, Munki will just use receipts to determine if a package is installed.
 You can see all the package receipts on your Mac by running pkgutil --pkgs
 You can narrow that down a bit by using grep: 
 
-pkgutil --pkgs | grep munki
+<h3>pkgutil --pkgs | grep munki</h3>
 
 Then you can get even more detail by running pkgutil 
 
---pkg-info com.googlecode.munki.app 
+<h3>--pkg-info com.googlecode.munki.app </h3>
+
 to see when the package was installed and what version was installed in MunkiAdmin, add docklib as a managed install to the common_software manifest. In your client device, go ahead and run
  
- sudo managedsoftwareupdate -vvv --checkonly
+ <h3>sudo managedsoftwareupdate -vvv --checkonly </h3>
 
-and you should see that Munki is deciding to install docklib based on the absence of the receipt. Once you install docklib using Managed Software Center, run sudo managedsoftwareupdate -vvv --checkonly again, and you should see Munki considers docklib installed based on the presence of the receipt.
+and you should see that Munki is deciding to install docklib based on the absence of the receipt. Once you install docklib using Managed Software Center, run 
+
+<h3>sudo managedsoftwareupdate -vvv --checkonly </h3>
+
+again, and you should see Munki considers docklib installed based on the presence of the receipt.
 
