@@ -5,7 +5,7 @@ date:   2021-11-05 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<img src="http://www.amsys.co.uk/wp-content/uploads/munki-admin-packages-java.png" alt="MSC" width="460" height="345">
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.networkworld.com%2Farticle%2F3625518%2Flooking-into-installed-packages-on-fedora.html&psig=AOvVaw2m4ge0CWSHZHv_dmn6TBjd&ust=1636251799988000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDuq4_XgvQCFQAAAAAdAAAAABAD" alt="MSC" width="460" height="345">
 
 
 
