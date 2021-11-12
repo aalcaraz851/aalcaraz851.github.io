@@ -73,21 +73,28 @@ The path on your server that contains the folders for global manifests, catalogs
 The primary manifest associated to this computer is manifest.
 
 <h3>Optional Keys</h3>
-
 "catalogs" is an array of catalogs that are assigned to this machine. If you do not provide a catalog in the config, you must have one in a manifest.
-"app_data_path" is Gorilla's working directory, and may store copies of manifests, catalogs, or packages. If "app_data_path" is not provided, it will default to %ProgramData%/gorilla/.
+
+"app_data_path" is Gorilla's working directory, and may store copies of manifests, catalogs, or packages. If 
+
+"app_data_path" is not provided, it will default to %ProgramData%/gorilla/.
+
 "url_packages" is an optional base url to be used instead of url when downloading packages.
 
-<h4>Basic Auth</h4>
 
+<h4>Basic Auth</h4>
 "auth_user" is an optional username for http basic auth.
+
 "auth_pass" is an option password for http basic auth.
 
 <h4>TLS Auth</h4>
 
 "tls_auth" must be true if you are using TLS mutual authentication.
+
 "tls_client_cert" is the absolute path to your client certificate in PEM format.
+
 "tls_client_key" is the absolute path to your client private key in PEM format.
+
 "tls_server_cert" is the absolute path to your server's CA cert in PEM format.
 
 <h1>Running Gorilla</h1>
