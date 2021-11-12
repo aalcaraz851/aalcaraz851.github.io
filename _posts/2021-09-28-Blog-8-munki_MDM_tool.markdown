@@ -16,14 +16,23 @@ Gorilla is intened to to provide application managenment on Windows similiar to 
 Setting up the web server to host at least one catalog, manifest, and packages. The structure should look like :
 
 [web root]
+
 ├── manifests
+
 │   ├── *.yaml
+
 ├── catalogs
+
 │   ├── *.yaml
+
 └── packages
+
     ├── *.nupkg
+
     ├── *.msi
+
     ├── *.exe
+
     └── *.ps1
 
 Next is setting up the Windows Client, the client will have to download "gorilla binary" and "Client Configuration".
@@ -40,14 +49,23 @@ The configuration file is in yaml format and is located at
 url: https://YourWebServer/gorilla/
 manifest: example
 catalogs: 
+
   - alpha
+
   - beta
+
 app_data_path: C:/gorilla/cache
+
 auth_user: GorillaRepoUser
+
 auth_pass: pizzaisyummy
+
 tls_auth: true
+
 tls_client_cert: c:/certs/client.pem
+
 tls_client_key: c:/certs/client.key
+
 tls_server_cert: c:/certs/server.pem
 
 
