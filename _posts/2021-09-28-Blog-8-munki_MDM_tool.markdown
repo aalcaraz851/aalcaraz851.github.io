@@ -68,8 +68,27 @@ tls_client_key: c:/certs/client.key
 
 tls_server_cert: c:/certs/server.pem
 
+<h3>Required Keys</h3>
+The path on your server that contains the folders for global manifests, catalogs, and packages is specified by url. (You may utilize a local file repository by supplying a "file:" / protocol: "url: C:/example/gorilla/local/)"
+The primary manifest associated to this computer is manifest.
 
+<h3>Optional Keys</h3>
 
+"catalogs" is an array of catalogs that are assigned to this machine. If you do not provide a catalog in the config, you must have one in a manifest.
+"app_data_path" is Gorilla's working directory, and may store copies of manifests, catalogs, or packages. If "app_data_path" is not provided, it will default to %ProgramData%/gorilla/.
+"url_packages" is an optional base url to be used instead of url when downloading packages.
+
+<h4>Basic Auth</h4>
+
+"auth_user" is an optional username for http basic auth.
+"auth_pass" is an option password for http basic auth.
+
+<h4>TLS Auth</h4>
+
+"tls_auth" must be true if you are using TLS mutual authentication.
+"tls_client_cert" is the absolute path to your client certificate in PEM format.
+"tls_client_key" is the absolute path to your client private key in PEM format.
+"tls_server_cert" is the absolute path to your server's CA cert in PEM format.
 
 <h1>Running Gorilla</h1>
 Gorilla will have to run as the administrator. It would most likely be launched as a scheduled process or service in production, but you can try it by opening a PowerShell or CMD window as an administrator and running C:pathtogorilla.exe.
