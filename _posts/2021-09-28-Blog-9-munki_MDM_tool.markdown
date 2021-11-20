@@ -66,11 +66,15 @@ version is the DisplayVersion of the item, exactly as it appears in the registry
     location: packages/apps/example_installer.exe
     type: exe
 
-arguments: is an optional list of arguments to pass to the installer. Currently only supported by exe installers.
-hash: is a required sha256 hash of the file located at location.
-location: is required and should be the path to the package, relative to the url provided in the configuration file.
-type: is required type of installer located at location and can be nupkg, msi, exe, or ps1.
-
+<dt>arguments: </dt>
+<dd>is an optional list of arguments to pass to the installer. Currently only supported by exe installers.</dd>
+<dt>hash: </dt>
+<dd>is a required sha256 hash of the file located at location.</dd>
+<dt>location: </dt>
+<dd>is required and should be the path to the package, relative to the url provided in the configuration file.</dd>
+<dt>type: </dt>
+<dd>is required type of installer located at location and can be nupkg, msi, exe, or ps1.</dd>
+</dl>
 
 <h2>Uninstallers</h2>
     uninstaller:
@@ -80,12 +84,16 @@ type: is required type of installer located at location and can be nupkg, msi, e
     hash: f3b4bb8bc7d47036674c1ed04713c720530f180e08da786fbcaf34c18be18dca
     location: packages/apps/example_uninstaller.exe
     type: exe
-
-arguments: similar to installer: arguments, but used when the item is configured as a managed_uninstall.
-hash: similar to installer: hash, but used when the item is configured as a managed_uninstall.
-location: similar to installer: location, but used when the item is configured as a managed_uninstall.
-type: similar to installer: type, but used when the item is configured as a managed_uninstall.
-
+<dl>
+<dt>arguments:</dt>
+<dd> similar to installer: arguments, but used when the item is configured as a managed_uninstall.</dd>
+<dt>hash:</dt>
+<dd> similar to installer: hash, but used when the item is configured as a managed_uninstall.</dd>
+<dt></dt>
+<dd>location: similar to installer: location, but used when the item is configured as a managed_uninstall.</dd>
+<dt>type:</dt>
+<dd> similar to installer: type, but used when the item is configured as a managed_uninstall.</dd>
+</dl>
 <h1>Example Catalog:</h1>
 ---
     GoogleChrome:
