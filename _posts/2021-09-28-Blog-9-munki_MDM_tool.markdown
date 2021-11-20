@@ -22,11 +22,11 @@ Catalogs are written in yaml, and each package is represented by the package nam
     version: 1.2.3
 <dl>
 <dt>dependencies</dt>
-<dd> is an optional array of package names that should be installed before this package.</dd>
+<dd> is a string that specifies which packages should be installed before this one.</dd>
 <dt>display_name</dt>
-<dd> should be a human-readable name, but is not currently used.</dd>
+<dd>Although it should be a human-readable name, it is currently not in use.</dd>
 <dt>version</dt>
-<dd> should be the version of the application, but is not currently used.</dd>
+<dd>This should be the application's version, but it isn't being used.</dd>
 </dl>
 
 <h3>Status Checks</h3>
@@ -37,11 +37,11 @@ check:
        - path: C:\example.exe
         hash: 
      
-path is a path to a file that must exist for the item to be considered installed.
+path: is a file path that must exist in order for an item to be deemed installed.
 
-version is the version of the file that can be found by looking at the "Details" tab of the file's properties window.
+version: is the file's version, which can be discovered in the file's properties window's "Details" tab.
 
-hash is an optional sha256 of the item that is expected at install_check_path.
+hash: is an optional sha256 of the item that install check path expects.
 
 You can get the hash of a file with Powershell. See below for an example.
 
@@ -59,9 +59,9 @@ You can get the hash of a file with Powershell. See below for an example.
     version: 1.2.3
 
 <dt>name</dt> 
-<dd>is the DisplayName of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
+<dd>is the item's DisplayName, exactly as it appears in the register HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
 <dt>version</dt> 
-<dd>is the DisplayVersion of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
+<dd>is the item's DisplayVersion, which is the same as the one in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
 
 <h2>Installers</h2>
     installer:
@@ -73,13 +73,13 @@ You can get the hash of a file with Powershell. See below for an example.
     type: exe
 
 <dt>arguments: </dt>
-<dd>is an optional list of arguments to pass to the installer. Currently only supported by exe installers.</dd>
+<dd>is a list of arguments that can be passed to the installer. Currently, only exe installers are supported.</dd>
 <dt>hash: </dt>
-<dd>is a required sha256 hash of the file located at location.</dd>
+<dd>is a sha256 hash of the file located at location that is required.</dd>
 <dt>location: </dt>
-<dd>is required and should be the path to the package, relative to the url provided in the configuration file.</dd>
+<dd>is necessary and should be the path to the package relative to the configuration file's url.</dd>
 <dt>type: </dt>
-<dd>is required type of installer located at location and can be nupkg, msi, exe, or ps1.</dd>
+<dd>is a sort of installer that must be present at the location and can be nupkg, msi, exe, or ps1.</dd>
 </dl>
 
 <h2>Uninstallers</h2>
@@ -92,13 +92,13 @@ You can get the hash of a file with Powershell. See below for an example.
     type: exe
 <dl>
 <dt>arguments:</dt>
-<dd> similar to installer: arguments, but used when the item is configured as a managed_uninstall.</dd>
+<dd> When the item is setup as a managed uninstall, it uses arguments similar to installer: arguments..</dd>
 <dt>hash:</dt>
-<dd> similar to installer: hash, but used when the item is configured as a managed_uninstall.</dd>
-<dt></dt>
-<dd>location: similar to installer: location, but used when the item is configured as a managed_uninstall.</dd>
+<dd>When the item is setup as a managed uninstall, it is comparable to installer: hash.</dd>
+<dt>location:</dt>
+<dd>When the item is specified as a managed uninstall, it is comparable to installer: location.</dd>
 <dt>type:</dt>
-<dd> similar to installer: type, but used when the item is configured as a managed_uninstall.</dd>
+<dd>When the item is configured as a managed uninstall, this type is similar to installer: type.</dd>
 </dl>
 <h1>Example Catalog:</h1>
 ---
