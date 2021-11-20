@@ -90,49 +90,26 @@ type: similar to installer: type, but used when the item is configured as a mana
 <h1>Example Catalog:</h1>
 ---
     GoogleChrome:
-
       display_name: Google Chrome
-
       check:
-
         registry:
-
           name: Google Chrome
-
           version: 68.0.3440.106
-
       installer:
-
         hash: ce9c44417489d6c1f205422a4b9e8d5181d1ac24b6dcae3bd68ec315efdeb18b
-
         location: packages/google-chrome/GoogleChrome.68.0.3440.106.nupkg
-
         type: nupkg
-
       version: 68.0.3440.106
 
-
-
-
     ColorPrinter:
-
       dependencies:
-
         - Canon-Drivers
-
       display_name: Color Printer
-
       installer:
-
         hash: a8b4ff8bc7d77036644c1ed04713c550550f180e08da786fbca784818b918dac
-
         location: packages/colorprinter.1.0.nupkg
-
         type: nupkg
-
       version: 1.0
-
-
 
     CanonDrivers:
       display_name: Canon Printer Drivers
@@ -154,50 +131,50 @@ type: similar to installer: type, but used when the item is configured as a mana
         type: ps1
       version: 1.0
 
-ChefClient:
-  display_name: Chef Client
-  check:
-    script: |
-      $latest = "14.3.37"
-      $chefPath = "C:\opscode\chef\bin\chef-client.bat"
-      If (![System.IO.File]::Exists($chefPath)) {
-        exit 0
-      }
-      $current = C:\opscode\chef\bin\chef-client.bat --version
-      $current = $current.Split(" ")[1]
-      $upToDate = [System.Version]$current -ge [System.Version]$latest
-      If ($upToDate) {
-        exit 1
-      } Else {
-        exit 0
-      }
-  installer:
-    location: packages/chef-client/chef-client-14.3.37-1-x64.msi
-    hash: f5ef8c31898592824751ec2252fe317c0f667db25ac40452710c8ccf35a1b28d
-    type: msi
-  uninstaller:
-    location: packages/chef-client/chef-client-14.3.37-1-x64.msi
-    hash: f5ef8c31898592824751ec2252fe317c0f667db25ac40452710c8ccf35a1b28d
-    type: msi
-  version: 14.3.37
+    ChefClient:
+      display_name: Chef Client
+      check:
+        script: |
+          $latest = "14.3.37"
+          $chefPath = "C:\opscode\chef\bin\chef-client.bat"
+          If (![System.IO.File]::Exists($chefPath)) {
+            exit 0
+          }
+          $current = C:\opscode\chef\bin\chef-client.bat --version
+          $current = $current.Split(" ")[1]
+          $upToDate = [System.Version]$current -ge [System.Version]$latest
+          If ($upToDate) {
+            exit 1
+          } Else {
+            exit 0
+          }
+      installer:
+        location: packages/chef-client/chef-client-14.3.37-1-x64.msi
+        hash: f5ef8c31898592824751ec2252fe317c0f667db25ac40452710c8ccf35a1b28d
+        type: msi
+      uninstaller:
+        location: packages/chef-client/chef-client-14.3.37-1-x64.msi
+        hash: f5ef8c31898592824751ec2252fe317c0f667db25ac40452710c8ccf35a1b28d
+        type: msi
+      version: 14.3.37
 
-vlc:
-  display_name: VLC
-  check:
-    file:
-      - path: C:\Program Files (x86)\VideoLAN\VLC\vlc.exe
-        version: 3.0.3
-  installer:
-    location: packages/apps/vlc/vlc-3.0.3-win32.exe
-    hash: 65bf42b15a05b13197e4dd6cdf181e39f30d47feb2cb6cc929db21cd634cd36f
-    arguments: 
-     - /L=1033
-     - /S
-    type: exe
-  uninstaller:
-    location: packages/apps/vlc/vlc-3.0.3-uninstall.exe
-    hash: 676dcb69da99728feb8af3231e863dbb9639dc09f409749a74dd5c08dc2fb809
-    arguments: 
-     - /S
-    type: exe
-  version: 3.0.3
+    vlc:
+      display_name: VLC
+      check:
+        file:
+          - path: C:\Program Files (x86)\VideoLAN\VLC\vlc.exe
+            version: 3.0.3
+      installer:
+        location: packages/apps/vlc/vlc-3.0.3-win32.exe
+        hash: 65bf42b15a05b13197e4dd6cdf181e39f30d47feb2cb6cc929db21cd634cd36f
+        arguments: 
+         - /L=1033
+         - /S
+        type: exe
+      uninstaller:
+        location: packages/apps/vlc/vlc-3.0.3-uninstall.exe
+        hash: 676dcb69da99728feb8af3231e863dbb9639dc09f409749a74dd5c08dc2fb809
+        arguments: 
+         - /S
+        type: exe
+      version: 3.0.3
