@@ -51,12 +51,11 @@ Path      : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
 
 <h3>Registry Checks</h3>
-check:
+    check:
 
-  registry:
+    registry:
 
     name: Example App
-
     version: 1.2.3
 
 name is the DisplayName of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.
