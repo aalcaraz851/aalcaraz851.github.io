@@ -90,26 +90,49 @@ type: similar to installer: type, but used when the item is configured as a mana
 <h1>Example Catalog:</h1>
 ---
     GoogleChrome:
+
       display_name: Google Chrome
+
       check:
+
         registry:
+
           name: Google Chrome
+
           version: 68.0.3440.106
+
       installer:
+
         hash: ce9c44417489d6c1f205422a4b9e8d5181d1ac24b6dcae3bd68ec315efdeb18b
+
         location: packages/google-chrome/GoogleChrome.68.0.3440.106.nupkg
+
         type: nupkg
+
       version: 68.0.3440.106
 
+
+
+
     ColorPrinter:
+
       dependencies:
+
         - Canon-Drivers
+
       display_name: Color Printer
+
       installer:
+
         hash: a8b4ff8bc7d77036644c1ed04713c550550f180e08da786fbca784818b918dac
+
         location: packages/colorprinter.1.0.nupkg
+
         type: nupkg
+
       version: 1.0
+
+
 
     CanonDrivers:
       display_name: Canon Printer Drivers
