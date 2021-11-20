@@ -33,12 +33,16 @@ Catalogs are written in yaml, and each package is represented by the package nam
 File Checks
 
 check:
-    file:
-    - path: C:\example.exe
-     hash: 
+       file:
+       - path: C:\example.exe
+        hash: 
+     
 path is a path to a file that must exist for the item to be considered installed.
+
 version is the version of the file that can be found by looking at the "Details" tab of the file's properties window.
+
 hash is an optional sha256 of the item that is expected at install_check_path.
+
 You can get the hash of a file with Powershell. See below for an example.
 
     PS C:\> Get-FileHash $pshome\powershell.exe | Format-List
@@ -54,8 +58,10 @@ You can get the hash of a file with Powershell. See below for an example.
     name: Example App
     version: 1.2.3
 
-name is the DisplayName of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.
-version is the DisplayVersion of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.
+<dt>name</dt> 
+<dd>is the DisplayName of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
+<dt>version</dt> 
+<dd>is the DisplayVersion of the item, exactly as it appears in the registry under HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\.</dd>
 
 <h2>Installers</h2>
     installer:
