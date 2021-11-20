@@ -5,8 +5,6 @@ date:   2021-11-19 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<img src="https://github.com/1dustindavis/gorilla/blob/main/gorilla.png" alt="MSC" width="460" height="345">
-
 
 
 <h1>Catalogs</h1>
@@ -19,14 +17,17 @@ Catalogs are written in yaml, and each package is represented by the package nam
 
 <h1>Supported Keys</h1>
     dependencies:
-
     example_dep
     display_name: Example App
     version: 1.2.3
-
-dependencies is an optional array of package names that should be installed before this package.
-display_name should be a human-readable name, but is not currently used.
-version should be the version of the application, but is not currently used.
+<dl>
+<dt>dependencies</dt>
+<dd> is an optional array of package names that should be installed before this package.</dd>
+<dt>display_name</dt>
+<dd> should be a human-readable name, but is not currently used.</dd>
+<dt>version</dt>
+<dd> should be the version of the application, but is not currently used.</dd>
+</dl>
 
 <h3>Status Checks</h3>
 File Checks
@@ -49,9 +50,7 @@ You can get the hash of a file with Powershell. See below for an example.
 
 <h3>Registry Checks</h3>
     check:
-
     registry:
-
     name: Example App
     version: 1.2.3
 
