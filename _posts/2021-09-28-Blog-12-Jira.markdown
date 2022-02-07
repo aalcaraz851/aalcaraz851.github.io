@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Blog-12-Jira-Application"
+date:   2021-12-10 11:58:57 -0700
+categories: Munki MDM Tool
+---
+
+This week I will be explianing how to use some features in Jira software.
+
+<h1>JIRA</h1>
+Jira Software is part of a suite of solutions meant to assist teams of all sizes in managing their workloads. Jira was originally intended to be a bug and problem tracker. Jira, on the other hand, has matured into a strong task management application for various types of use cases, ranging from requirements and test case management to agile software development.
+
+<h1>How to create Jira Issue</h1>
+Jira can be used as a ticketing system that helps keep track of Jira issuse, project, and documention needed for companys.
+
+Step 1:
+Normally if an issue needs to be created it starts by clicking the button create:
+
+Photo1
+
+Step 2:
+The project field has different teams projects such as networking, infrstucture, helpdesk and more. Choose the best suited for the issue. In this case we will choose the Client Enigineer Team project(ITCEO):
+
+Photo 2
+
+Step 3:
+Issue type will be to best describe the problem such as Service Request, Problem and Access.
+
+Photo 3
+
+Step 4
+
+
+
