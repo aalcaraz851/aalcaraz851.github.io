@@ -66,7 +66,7 @@ The project sector includes a variety of team projects such as networking, infra
 
 <img src="https://confluence.atlassian.com/jirakb/files/779158632/779158634/2/1444696422718/Screen+Shot+2013-06-11+at+3.21.04+PM.png" alt="Jira3" width="460" height="345">
 
-<h1>Step6 :</h1>
+<h1>Step 6 :</h1>
 
 Create the Jira Issue.
 
