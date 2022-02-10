@@ -17,7 +17,7 @@ Step 1:
 Normally if an issue needs to be created it starts by clicking the button create:
 
 Photo1
-
+<img src="img_chania.jpg" width="460" height="345">
 Step 2:
 The project field has different teams projects such as networking, infrstucture, helpdesk and more. Choose the best suited for the issue. In this case we will choose the Client Enigineer Team project(ITCEO):
 
@@ -36,7 +36,7 @@ photo 4
 Step 5 :
 
 Description
- Epic link, components, labels, assignee, linked issues, and create.
+ Epic link, components, labels, assignee, linked issues, and create..
 
 
 
