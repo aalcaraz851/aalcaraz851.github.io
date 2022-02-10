@@ -4,7 +4,8 @@ title:  "Blog-12-Jira-Application"
 date:   2022-02-09 11:58:57 -0700
 categories: Munki MDM Tool
 ---
-
+<html>
+<body>
 This week I will be explianing how to use some features in Jira software.
 
 <h1>JIRA</h1>
@@ -18,7 +19,7 @@ Step 1:
 Normally if an issue needs to be created it starts by clicking the button create:
 
 Photo1
-<img src="Photo1Blog.jpg" width="460" height="345">
+<img src="Blog/Photo1Blog.jpg" alt="test1" width="460" height="345">
 
 
 Step 2:
@@ -45,3 +46,5 @@ Epic link, components, labels, assignee, linked issues, and create..
 
 
 
+</body>
+</html>
