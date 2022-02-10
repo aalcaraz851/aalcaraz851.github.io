@@ -4,8 +4,7 @@ title:  "Blog-12-Jira-Application"
 date:   2022-02-09 11:58:57 -0700
 categories: Munki MDM Tool
 ---
-<html>
-<body>
+
 This week I will be explianing how to use some features in Jira software.
 
 <h1>JIRA</h1>
@@ -14,7 +13,7 @@ Jira Software is part of a suite of solutions meant to assist teams of all sizes
 <h1>How to create a Jira Issue</h1>
 Jira can be used as a ticketing system that helps keep track of Jira issuse, project, and documention needed for companys.
 
-Step 1:
+<h1>Step 1:</h1>
 
 Normally if an issue needs to be created it starts by clicking the button create:
 
@@ -42,9 +41,3 @@ Step 5 :
 Description
 Epic link, components, labels, assignee, linked issues, and create..
 
-
-
-
-
-</body>
-</html>
