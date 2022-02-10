@@ -18,7 +18,7 @@ Jira can be used as a ticketing system that helps keep track of Jira issuse, pro
 Normally if an issue needs to be created it starts by clicking the button create:
 
 Photo1
-<img src="Photo1Blog.jpg" alt="test1" width="460" height="345">
+<img src="http://www.amsys.co.uk/wp-content/uploads/munki-repo.jpg" alt="MSC" width="460" height="345">
 
 
 Step 2:
