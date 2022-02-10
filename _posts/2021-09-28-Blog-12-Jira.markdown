@@ -19,7 +19,7 @@ Step 1:
 Normally if an issue needs to be created it starts by clicking the button create:
 
 Photo1
-<img src="Blog/Photo1Blog.jpg" alt="test1" width="460" height="345">
+<img src="Photo1Blog.jpg" alt="test1" width="460" height="345">
 
 
 Step 2:
