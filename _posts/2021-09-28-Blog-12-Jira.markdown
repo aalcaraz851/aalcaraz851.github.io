@@ -24,7 +24,9 @@ This week I will be explianing how to use some features in Jira software.
 
 <h1> Step 2:</h1>
 
-      The project field is utilized for tickets to be routed to the appropriate team, which effectively gathers tickets for the departments. For example, if we have a networking problem, we would open a ticket for the networking team and look for the project Network (NET). This will allow the network staff to get this ticket.
+      The project field is utilized for tickets to be routed to the appropriate team, which effectively gathers tickets for the 
+      departments. For example, if we have a networking problem, we would open a ticket for the networking team and look for the 
+      project Network (NET). This will allow the network staff to get this ticket.
 
 
 The project sector includes a variety of team projects such as networking, infrastructure, helpdesk, and more. Choose the best option for the problem. In this scenario, we'll go with the Jira Two Project (JRTWO):
@@ -41,11 +43,13 @@ The project sector includes a variety of team projects such as networking, infra
 
 <h1>Step 4:</h1>
 
-      Additional fields, such as Summary, Priority, OS Platform, Serial Number, and Application, are available depending on the ticket. When the receiver sees this ticket, these fields can be used to effectively convey the problem at hand.
-      Summary: This will be the title of the problem with the device or something similar.
-      Priority: How urgent is the problem high, low
-      Platform: Windows, MacOS, Linux, and other platforms are available.
-      Serial Number: The device's identification number.
+      Additional fields, such as Summary, Priority, OS Platform, Serial Number, and Application, are available depending on the ticket. 
+      When the receiver sees this ticket, these fields can be used to effectively convey the problem at hand.
+      
+      - Summary: This will be the title of the problem with the device or something similar.
+      - Priority: How urgent is the problem high, low
+      - Platform: Windows, MacOS, Linux, and other platforms are available.
+      - Serial Number: The device's identification number.
 
 
 <img src="https://s3-eu-central-1.amazonaws.com/euc-cdn.freshdesk.com/data/helpdesk/attachments/production/80036026278/original/lZ_sHtBNqqxpIeIElgnw8R4v7Lx53G_3ew.png?1631195354" alt="Jira3" width="460" height="345">
@@ -53,12 +57,12 @@ The project sector includes a variety of team projects such as networking, infra
 <h1>Step 5 :</h1>
 
       This final step is critical for keeping the object ordered.
-      Description: This will be the title of the problem with the device or something similar.
-      Epic link: Is the ticket for the project name; some tickets do not have an Epic link unless they are for a planned future project.
-      Components: These are the items that are related to the issue, such as windows, updates, or any other items that are relevant to this ticket.
-      Labels: Any tags that relate to your problem, such as hardware, networking, and so on.
-      Assignee: The person who will help with the jira problem.
-      Linked Issues, which are similar, are affected by: This field will contain any linked tickets. 
+      - Description: This will be the title of the problem with the device or something similar.
+      - Epic link: Is the ticket for the project name; some tickets do not have an Epic link unless they are for a planned future project.
+      - Components: These are the items that are related to the issue, such as windows, updates, or any other items that are relevant to this ticket.
+      - Labels: Any tags that relate to your problem, such as hardware, networking, and so on.
+      - Assignee: The person who will help with the jira problem.
+      - Linked Issues, which are similar, are affected by: This field will contain any linked tickets. 
 
 <img src="https://confluence.atlassian.com/jirakb/files/779158632/779158634/2/1444696422718/Screen+Shot+2013-06-11+at+3.21.04+PM.png" alt="Jira3" width="460" height="345">
 
