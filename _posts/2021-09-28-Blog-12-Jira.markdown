@@ -18,13 +18,14 @@ Jira can be used as a ticketing system that helps keep track of Jira issuse, pro
 Normally if an issue needs to be created it starts by clicking the button create:
 
 Photo1
-<img src="https://wiki.onosproject.org/download/attachments/1638745/jira-ticket.png?version=1&modificationDate=1416504060019&api=v2" alt="MSC" width="460" height="345">
+<img src="https://wiki.onosproject.org/download/attachments/1638745/jira-ticket.png?version=1&modificationDate=1416504060019&api=v2" alt="Jira" width="460" height="345">
 
 
 Step 2:
 The project field has different teams projects such as networking, infrstucture, helpdesk and more. Choose the best suited for the issue. In this case we will choose the Client Enigineer Team project(ITCEO):
 
 Photo 2
+<img src="https://scriptrunner.adaptavist.com/4.1.3.14/jira/fragments/image/create-issue-linked.png" alt="Jira1" width="460" height="345">
 
 Step 3:
 Issue type will be to best describe the problem such as Service Request, Problem and Access.
