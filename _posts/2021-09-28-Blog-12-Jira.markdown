@@ -45,7 +45,7 @@ The project sector includes a variety of team projects such as networking, infra
 
       Additional fields, such as Summary, Priority, OS Platform, Serial Number, and Application, are available depending on the ticket. 
       When the receiver sees this ticket, these fields can be used to effectively convey the problem at hand.
-      
+
       - Summary: This will be the title of the problem with the device or something similar.
       - Priority: How urgent is the problem high, low
       - Platform: Windows, MacOS, Linux, and other platforms are available.
@@ -66,7 +66,7 @@ The project sector includes a variety of team projects such as networking, infra
 
 <img src="https://confluence.atlassian.com/jirakb/files/779158632/779158634/2/1444696422718/Screen+Shot+2013-06-11+at+3.21.04+PM.png" alt="Jira3" width="460" height="345">
 
-</h1>Step6 :</h1>
+<h1>Step6 :</h1>
 
 Create the Jira Issue.
 
