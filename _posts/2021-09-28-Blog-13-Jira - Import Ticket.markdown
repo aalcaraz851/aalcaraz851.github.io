@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog-12-Jira-Application- Bulk Create"
+title:  "Blog-13-Jira-Application-Bulk Create"
 date:   2022-02-17 11:58:57 -0700
 categories: Munki MDM Tool
 ---
@@ -46,7 +46,6 @@ If the CSV file uses a different separator character other than a comma, specify
 this can be entered using the format '/t'.
 
 <img src="https://www.tutorialspoint.com/jira/images/settings_of_csv_file.jpg" alt="Jira" width="460" height="345">
-click next--> validate to make sure the tickets can be created and import to JIRA
 
 <h1>Step 5 :</h1>
 The Next button to proceed to the Map field’s step of the CSV file import wizard.
