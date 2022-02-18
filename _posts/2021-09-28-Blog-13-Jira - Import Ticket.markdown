@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blog-12-Jira-Application"
-date:   2022-02-09 11:58:57 -0700
+title:  "Blog-12-Jira-Application- Bulk Create"
+date:   2022-02-17 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
@@ -24,38 +24,57 @@ This a tool that grabs a .csv file and uses the data from the sheet to create mu
 When prparing your CSV you should have a heading row with a summary column. The first row is the heading row and represents the fields of the create issue page. 
 
 <h1>Step 1:</h1>
-Click create
+When using the interface to use the bulk create tool, YOU will want to navigate to the TAB "Issue" --> Import Issues From CVA
 
 <img src="https://www.tutorialspoint.com/jira/images/csv_functionality.jpg" alt="Jira" width="460" height="345">
 
 <h1> Step 2:</h1>
-import .csv and dont import the config file if you dont have one.
+Now that we are in create setup page you will select "CSV Sourse File" . YOu dont need to worry about “Use an existing configuration file" this will be introduced later but not needed to import thes issues.
 
+Click "Next" once you have selected CVS:
 <img src="https://www.tutorialspoint.com/jira/images/csv_source_file.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 3:</h1>
-click nexted -> match feilds that are the same as your colums
+If the user checks the checkbox of “Use an existing configuration file”, JIRA will ask to specify an Existing Configuration File.
+IN step 6 it will ask you if you want download the confifuration file so you dont have to select the feild again.
 
 <img src="https://www.tutorialspoint.com/jira/images/bulk_create_setup.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 4:</h1>
+Click on the Next button → the Settings step of the CSV file import wizard will display. Complete the required fields. 
+If the CSV file uses a different separator character other than a comma, specify that character in the CSV Delimiter field. If the separator is a 'Tab', 
+this can be entered using the format '/t'.
 
 <img src="https://www.tutorialspoint.com/jira/images/settings_of_csv_file.jpg" alt="Jira" width="460" height="345">
 click next--> validate to make sure the tickets can be created and import to JIRA
 
 <h1>Step 5 :</h1>
-
+The Next button to proceed to the Map field’s step of the CSV file import wizard.
+A CSV field should map to the JIRA summary field. This ensures the issues created have a summary.
 <img src="https://www.tutorialspoint.com/jira/images/map_field_value.jpg" alt="Jira" width="460" height="345">
-double check the tickets are created the way you want
 
 <h1>Step 6 :</h1>
+the Map values step of the CSV file import wizard will display. On this step of the import wizard, the user can select which 
+specific CSV field values to map to which specific JIRA field value.
+Fields whose Map Field Value check boxes were selected in the previous step will be presented on this page.
 
+If the CSV field has a username (e.g. Reporter or Assignee) and does not select the Map Field Value check box for this 
+field in the previous step of the CSV file import wizard, then the importer will map imported usernames from the CSV file to (lowercase) JIRA usernames.
 <img src="https://www.tutorialspoint.com/jira/images/how_to_map_values.jpg" alt="Jira" width="460" height="345">
-Assign them to your self or what a for help desk to pick up the ticket 
 
 <h1>Step 7 :</h1>
+Here Jira has a unique option that allows you to validate your issue before creating it.
+Green means all your issue canbe created
+Red means You have en error in your cvs or mapping the fields
+Yellow will warn you if you have a wrong issue feild
+
 <img src="https://www.tutorialspoint.com/jira/images/validation.jpg" alt="Jira" width="460" height="345">
+
 <h1>Step 8 :</h1>
+Now! We are ready to Import when validate has been a success, once created it was give you link to your created issues.
+
 <img src="https://www.tutorialspoint.com/jira/images/issues_created_using_csv_file.jpg" alt="Jira" width="460" height="345">
+
 <h1>Step 9 :</h1>
+Click Created Issues and Spot check the information
 <img src="https://www.tutorialspoint.com/jira/images/how_to_map_values.jpg" alt="Jira" width="460" height="345">
