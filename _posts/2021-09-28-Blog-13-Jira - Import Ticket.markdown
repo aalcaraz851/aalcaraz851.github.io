@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog-13-Jira-Application-Bulk Create"
+title:  "Blog-13-Jira-Bulk Create"
 date:   2022-02-17 11:58:57 -0700
 categories: Munki MDM Tool
 ---
@@ -41,31 +41,30 @@ IN step 6 it will ask you if you want download the confifuration file so you don
 <img src="https://www.tutorialspoint.com/jira/images/bulk_create_setup.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 4:</h1>
-Click on the Next button → the Settings step of the CSV file import wizard will display. Complete the required fields. 
-If the CSV file uses a different separator character other than a comma, specify that character in the CSV Delimiter field. If the separator is a 'Tab', 
-this can be entered using the format '/t'.
+When you click the Next button, the CSV file import wizard's Settings stage will appear. Fill in all of the mandatory fields.
+If the CSV file contains a character other than a comma as a separator, type that character in the CSV Delimiter field. 
+If the separator is a 'Tab,' use the format '/t' to enter it.
 
 <img src="https://www.tutorialspoint.com/jira/images/settings_of_csv_file.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 5 :</h1>
-The Next button to proceed to the Map field’s step of the CSV file import wizard.
-A CSV field should map to the JIRA summary field. This ensures the issues created have a summary.
+The Next button will take you to the CSV file import wizard's Map field phase.
+The JIRA summary field should be mapped to a CSV field. This guarantees that the issues are summarized.
 <img src="https://www.tutorialspoint.com/jira/images/map_field_value.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 6 :</h1>
-the Map values step of the CSV file import wizard will display. On this step of the import wizard, the user can select which 
-specific CSV field values to map to which specific JIRA field value.
-Fields whose Map Field Value check boxes were selected in the previous step will be presented on this page.
+The CSV file import wizard's Map values step will appear. The user can choose which specific CSV field values to match to which specific JIRA field value on this phase of the import procedure.
+This page will display fields whose Map Field Value check boxes were selected in the previous stage.
 
-If the CSV field has a username (e.g. Reporter or Assignee) and does not select the Map Field Value check box for this 
-field in the previous step of the CSV file import wizard, then the importer will map imported usernames from the CSV file to (lowercase) JIRA usernames.
+The importer will map imported usernames from the CSV file to (lowercase) JIRA usernames if the CSV field has a username (e.g. Reporter or Assignee) 
+and the Map Column Value check box for this field is not selected in the previous phase of the CSV file import wizard.
 <img src="https://www.tutorialspoint.com/jira/images/how_to_map_values.jpg" alt="Jira" width="460" height="345">
 
 <h1>Step 7 :</h1>
-Here Jira has a unique option that allows you to validate your issue before creating it.
-Green means all your issue canbe created
-Red means You have en error in your cvs or mapping the fields
-Yellow will warn you if you have a wrong issue feild
+Jira provides a one-of-a-kind feature that allows you to validate your problem before you create it.
+Green denotes that you have the ability to create all of your problems.
+Red indicates that you have a problem with your CVS or field mapping.
+If you have the improper issue field, Yellow will warn you.
 
 <img src="https://www.tutorialspoint.com/jira/images/validation.jpg" alt="Jira" width="460" height="345">
 
@@ -77,3 +76,5 @@ Now! We are ready to Import when validate has been a success, once created it wa
 <h1>Step 9 :</h1>
 Click Created Issues and Spot check the information
 <img src="https://www.tutorialspoint.com/jira/images/how_to_map_values.jpg" alt="Jira" width="460" height="345">
+
+
