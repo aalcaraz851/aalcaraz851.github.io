@@ -8,10 +8,15 @@ categories: Munki MDM Tool
 This week I will be explianing how to use some features in Jira software.
 
 <h1>JIRA</h1>
-      Jira Software is part of a suite of solutions meant to assist teams of all sizes in managing their workloads. Jira was originally intended to be a bug and problem tracker. Jira, on the other hand, has matured into a strong task management application for various types of use cases, ranging from requirements and test case management to agile software development.
+      Jira Software is part of a suite of solutions meant to assist teams of all sizes 
+      in managing their workloads. Jira was originally intended to be a bug and problem 
+      tracker. Jira, on the other hand, has matured into a strong task management 
+      application for various types of use cases, ranging from requirements and 
+      test case management to agile software development.
 
 <h1>How to create a Jira Issue</h1>
-      Jira can be used as a ticketing system to help companies keep track of issues, projects, and documentation.
+      Jira can be used as a ticketing system to help companies keep track of issues, 
+      projects, and documentation.
 
       Keeping track of projects is one uneasy function you can use Jira for.
 
