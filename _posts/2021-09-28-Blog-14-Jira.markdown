@@ -5,13 +5,10 @@ date:   2022-02-26 11:58:57 -0700
 categories: Google Application
 ---
 
- 
-
 <h1>Google Applications</h1>
       Their are many Google Appilcation such as Google Mail, slides, docs, calendar, drive and more. The Appication we will be using is
       the Google sheets. In Sheets we have access to the other google applications and unquine features Google offices, the mail 
       feature we will use in Google sheet is the Mail Merge extention
 
 <h1>How Google Mail Merge work</h1>
-You make a Gmail draft format with stand ins for data from a Google Sheets spreadsheet. A placeholder tag is represented by each column heading in a sheet. The script transmits each placeholder's information from the spreadsheet to the location of the appropriate replacement tag in your email document.
-      
+      You make a Gmail draft format with stand ins for data from a Google Sheets spreadsheet. A placeholder tag is represented by each column heading in a sheet. The script transmits each placeholder's information from the spreadsheet to the location of the appropriate replacement tag in your email document.
