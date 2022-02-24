@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog-14-Google-Sheets"
 date:   2022-02-26 11:58:57 -0700
-categories: Google Application
+categories: Munki MDM Tool
 ---
 
 <h1>Google Applications</h1>
