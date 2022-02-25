@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog-14-Google-Sheets"
 date:   2022-02-22 11:58:57 -0700
-categories: Munki MDM Tool
+categories: Mail Merge
 ---
 
 <h1>Google Applications</h1>
@@ -42,7 +42,7 @@ Example 1
 
 <img src="https://developers.google.com/apps-script/samples/images/mail-merge.gif" alt="Jira" width="460" height="345">
 
-<h>Summary:</h>
+<h1>Summary:</h1>
 Make a copy of mail merge sheet
       - Label the columns anything you’d like such as FirstName, LastName, date and more but one of the one column must have the Recipient because this is email that will be used to mail merge with your templet
       
