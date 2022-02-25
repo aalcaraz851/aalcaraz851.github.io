@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog-14-Google-Sheets"
 date:   2022-02-22 11:58:57 -0700
-categories: Munki MDM Tool
+categories: Google Mail Merge
 ---
 
 <h1>Google Applications</h1>
@@ -42,18 +42,18 @@ Example 1
 
 <img src="https://developers.google.com/apps-script/samples/images/mail-merge.gif" alt="Jira" width="460" height="345">
 
-Summary:
+<h>Summary:</h>
 Make a copy of mail merge sheet
       - Label the columns anything you’d like such as FirstName, LastName, date and more but one of the one column must have the Recipient because this is email that will be used to mail merge with your templet
       
 Create an email templet with a subject line, type information in the email templet. To use the data from the sheet you must label words in your templet for example:
 
-      Hello {{FirstName}},
+Hello {{FirstName}},
 
-      Welcome {{FirstName}} {{LastName}} to the CSUN and we want to attend our master’s degree program on {{Date}}.
+Welcome {{FirstName}} {{LastName}} to the CSUN and we want to attend our master’s degree program on {{Date}}.
 
-      Best,
-      Andrew
+Best,
+Andrew
 
 In this example we have labeled the data we want to use from sheets.
 
