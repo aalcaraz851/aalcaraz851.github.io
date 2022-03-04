@@ -7,74 +7,16 @@ categories: Munki MDM Tool
 
 <h1> GitHub</h1>
 
-GitHub is a version management and collaboration tool for programming. It allows you and others to collaborate on projects from any location. This course covers the fundamentals of GitHub, such as repositories, branches, commits, and pull requests. 
-
-In this blog I will show you how to install GitHub and use it from the command line.
 
 <h1>How Install GitHub</h1>
 
-      Windows: https://gitforwindows.org/
-      You can download the installer in the link above
-
-      Mac/Apple: https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect
-
-      You can download the installer in the link above
-
-Once you install GitHub you could check in the command line if git installed:
-      
-      git version
-
-How to pull and push a repo to GitHub
 <h1>Step 1: How to Download a Repository from GitHub </h1>
 
- Assuming you have a repository created in GitHub we will continue to to download a set.
-
- Here you will need to log onto GitHub and pick the repository you would like to download.
-
- Photo1
-
-Now we will navigate to the repo and look for the button code, next we will copy the link in HTTPS which will look like this:
-
-https://github.com/aalcarazfdsf87/aalcaraz123.github.io.git
-
-Before opening the terminal, you will need to choose a location to place these files before downloading it. For example, the desktop is a great location to have this folder.
-
-Once you have the link, we will open a terminal and type:
-      
-      cd ~/Desktop
-      git pull (Your HTTPS code that was copied)
-      
-      photo2
-
-Now if you check if the file downloaded:
-      
-      ls
-      photo3
+ 
 
 <h1>Step 2: How to push a commit to GitHub </h1>
 
-      First, we will need to navigate to the location of the repo:
-      The repo I used is in placed on the desktop so I will use the terminal to go to the location:
-      
-      cd ~/Desktop
-      ls 
-      photo2
-
-Next, we will use the git status command to make sure we are in clean working tree. 
-
-This is where we will create a file and push the file change to GitHub.
-      
-      #Add the file
-      git add (filename)-
-      #Add comment to the file
-      git commit -m "test file on desktop"
-      # Push the file
-      git push origin main
-
-It will prompt you to sign in your email then your password.
-
-Once you have logged on you can double check if the changes applied.
 
 <h1>Summary: </h1>
 
-The steps can be more complex once you need to add branches, create repos and link account to SaaS environment. 
+
