@@ -30,7 +30,9 @@ How to pull and push a repo to GitHub
 
  Here you will need to log onto GitHub and pick the repository you would like to download.
 
- Photo1
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCYuGkZHbZcN6cYn1hw1ivNAxDKTiPFmcyQ&usqp=CAU" alt="Jira" width="460" height="345">
+
 
 Now we will navigate to the repo and look for the button code, next we will copy the link in HTTPS which will look like this:
 
@@ -42,14 +44,15 @@ Once you have the link, we will open a terminal and type:
       cd ~/Desktop
       git clone (Your HTTPS code that was copied)
 
-      photo--------
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCYuGkZHbZcN6cYn1hw1ivNAxDKTiPFmcyQ&usqp=CAU" alt="Jira" width="460" height="345">
+
+<img src="https://i.stack.imgur.com/saRst.png" alt="Jira" width="460" height="345">
+
 
 Now if you check if the file downloaded:
       ls
 
-      photo3
+
       
 <img src="https://gitforwindows.org/img/gw1.png" alt="Jira" width="460" height="345">
 
@@ -60,7 +63,7 @@ First, we will need to navigate to the location of the repo:
       cd ~/Desktop
       ls 
 
-photo2
+
 <img src="https://opensource.com/sites/default/files/u128651/git_guide20.png" alt="Jira" width="460" height="345">
 
 Next, we will use the git status command to make sure we are in clean working tree. 
