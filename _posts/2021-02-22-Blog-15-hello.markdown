@@ -31,7 +31,6 @@ How to pull and push a repo to GitHub
  Here you will need to log onto GitHub and pick the repository you would like to download.
 
  Photo1
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopensource.com%2Farticle%2F18%2F2%2Fhow-clone-modify-add-delete-git-files&psig=AOvVaw25UJIIn53Z00Qzcr50ILUm&ust=1646547766651000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIi87smqrvYCFQAAAAAdAAAAABAD" alt="Jira" width="460" height="345">
 
 Now we will navigate to the repo and look for the button code, next we will copy the link in HTTPS which will look like this:
 
@@ -44,11 +43,14 @@ Once you have the link, we will open a terminal and type:
       git clone (Your HTTPS code that was copied)
 
       photo--------
+
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCYuGkZHbZcN6cYn1hw1ivNAxDKTiPFmcyQ&usqp=CAU" alt="Jira" width="460" height="345">
+
 Now if you check if the file downloaded:
       ls
 
       photo3
+      
 <img src="https://gitforwindows.org/img/gw1.png" alt="Jira" width="460" height="345">
 
 <h1>Step 2: How to push a commit to GitHub </h1>
