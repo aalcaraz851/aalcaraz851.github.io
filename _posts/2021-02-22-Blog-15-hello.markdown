@@ -44,7 +44,7 @@ Once you have the link, we will open a terminal and type:
       git clone (Your HTTPS code that was copied)
 
       photo--------
-<img src="https://opensource.com/sites/default/files/u128651/git_guide12.png" alt="Jira" width="460" height="345">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCYuGkZHbZcN6cYn1hw1ivNAxDKTiPFmcyQ&usqp=CAU" alt="Jira" width="460" height="345">
 Now if you check if the file downloaded:
       ls
 
