@@ -31,6 +31,7 @@ How to pull and push a repo to GitHub
  Here you will need to log onto GitHub and pick the repository you would like to download.
 
  Photo1
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopensource.com%2Farticle%2F18%2F2%2Fhow-clone-modify-add-delete-git-files&psig=AOvVaw25UJIIn53Z00Qzcr50ILUm&ust=1646547766651000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIi87smqrvYCFQAAAAAdAAAAABAD" alt="Jira" width="460" height="345">
 
 Now we will navigate to the repo and look for the button code, next we will copy the link in HTTPS which will look like this:
 
@@ -40,13 +41,15 @@ Before opening the terminal, you will need to choose a location to place these f
 
 Once you have the link, we will open a terminal and type:
       cd ~/Desktop
-      git pull (Your HTTPS code that was copied)
+      git clone (Your HTTPS code that was copied)
 
-      photo2
-
+      photo--------
+<img src="https://opensource.com/sites/default/files/u128651/git_guide12.png" alt="Jira" width="460" height="345">
 Now if you check if the file downloaded:
       ls
+
       photo3
+<img src="https://gitforwindows.org/img/gw1.png" alt="Jira" width="460" height="345">
 
 <h1>Step 2: How to push a commit to GitHub </h1>
 
@@ -54,7 +57,10 @@ First, we will need to navigate to the location of the repo:
       The repo I used is in placed on the desktop so I will use the terminal to go to the location:
       cd ~/Desktop
       ls 
+
 photo2
+<img src="https://opensource.com/sites/default/files/u128651/git_guide20.png" alt="Jira" width="460" height="345">
+
 Next, we will use the git status command to make sure we are in clean working tree. 
 
 This is where we will create a file and push the file change to GitHub.
