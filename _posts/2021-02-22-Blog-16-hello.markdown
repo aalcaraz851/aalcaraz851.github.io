@@ -1,22 +1,47 @@
 ---
 layout: post
-title:  "Blog-16-GitHub"
+title:  "Blog-16-ImageMac"
 date:   2022-03-02 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<h1> GitHub</h1>
+<h1> Imaging Mac with an external Usb </h1>
+ Two thing needed for thsi to work:
+    1.Have a connection to the internet 
+    2. After reimaging, make sure the eternal boot setting in the startup security utiliy has been turned off again.
+
+<h1>What you need to create a bootable installer:</h1>
+    •	The USB flash formatted as Mac OS Extended, with at least 14GB of available storage. 
+    •	Open the Disk Utility app on your Mac (found in the Applications > Utilities folder)
+    •	Choose View > Show All Devices.
+    •	In the sidebar, select the storage device you want to erase, then click the Erase button .
+    •	Click the Scheme pop-up menu, then choose GUID Partition Map.
+    •	Click the Format pop-up menu, then choose the MacOS Extended file system format.
+    •	Enter a name (This part isn't important).
+    •	Click Erase, then click Done.
 
 
-<h1>How Install GitHub</h1>
-
-<h1>Step 1: How to Download a Repository from GitHub </h1>
+<h1>Download macOS</h1>
+    •	Download: macOS Big Sur, macOS Catalina
+    These download to your Applications folder as an app named Install macOS [version name]. If the installer opens after downloading, quit it without continuing installation.
 
  
 
-<h1>Step 2: How to push a commit to GitHub </h1>
+<h1>Use the 'createinstallmedia' command in Terminal</h1>
 
+    •	Connect the USB flash drive or other volume that you're using for the bootable installer. 
+    •	Open Terminal, which is in the Utilities folder of your Applications folder.
+    •	Type or paste one of the following commands in Terminal. These assume that the installer is in your Applications folder, and MyVolume is the name of the USB flash drive or other volume you're using. If it has a different name, replace MyVolume in these commands with the name of your volume.
+    Big Sur:*
+    sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+    Catalina:*
+    sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+    After typing the command:
+    a.	Press Return to enter the command.
+    b.	When prompted, type your administrator password and press Return again. Terminal doesn't show any characters as you type your password.
+    c.	When prompted, type Y to confirm that you want to erase the volume, then press Return. Terminal shows the progress as the volume is erased.
+    d.	After the volume is erased, you may see an alert that Terminal would like to access files on a removable volume. Click OK to allow the copy to proceed. 
+    e.	When Terminal says that it's done, the volume will have the same name as the installer you downloaded, such as Install macOS Big Sur. You can now quit Terminal and eject the volume.
 
-<h1>Summary: </h1>
 
 
