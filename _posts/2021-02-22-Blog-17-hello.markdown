@@ -7,34 +7,38 @@ categories: Munki MDM Tool
 
 
 <h1>How to change the Local username on Windows Device</h1>
-In some cases you might want to change the local username if you are trying to logon to VPN for compnay or production enviroment. In this example We will go throught how to check if the user is having a issue with VPN.
+In some cases, you might want to change the local username if you are trying to logon to VPN for company or production environment. In this example We will go through how to check if the user is having an issue with VPN.
 
-<h1>Prerequest</h1>
-If you working work with customer you might need to use a application to remote into their computer or guide them. 
+<h1>Prerequisites</h1>
+If you are working work with customer, you might need to use a application to remote into their computer or guide them. 
 
 <h1>Step 1: Check in</h1>
-Normally there is some type of envirment that a company uses to determine information on the device. In this case we use Airwatch, for this device we need to check if its been online and seen within the last 24 hours.
+Normally there is some type of environment that a company uses to determine information on the device. In this case we use AirWatch, for this device we need to check if it’s been online and seen within the last 24 hours.
 
-The account that will be cganing the Local username has to be an admin account, if its doesnt have the priviagles to change we will have to push an account from the console or logon to an admin account.
+The account that will be changing the Local username has to be an admin account, if it’s doesn’t have the privileges to change, we will have to push an account from the console or logon to an admin account.
  
 
 <h1>Step 2: Local Computer Management</h1>
-    Launch Computer Management - Expand to Local Users & Groups - Users - right click the customer account to be renamed and select Rename, update the name to be their OKTA username ie TestUser, do not include the domain name
-    a.	If the Full Name is not populated, double click the user and update the Full Name field
+    Launch Computer Management - Expand to Local Users & Groups - Users - right click the customer account to be renamed and select Rename, update the name to be their OKTA username is TestUser, do not include the domain name
+    a.  If the Full Name is not populated, double click the user and update the Full Name field
+
 
 <h1>Step 3: Registry</h1>
     Once the username has been updated, we'll need to then launch the Registry Edit or (click start type regedit and open)
     Navigate to the following registry location
     Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\
     Once in the ProfileList, browse the Profile GUIDS until you've found the user's GUID
-    a.pay attention to the ProfileImagePath value, once you've located the entry that matches your user, double click ProfileImagePath and replace the username listed with the updated username
+    a.	pay attention to the ProfileImagePath value, once you've located the entry that matches your user, double click ProfileImagePath and replace the username listed with the updated username
 
-<h1>Step 3: Veirfy</h1>
-    Find the User profile in the filesystem ie C:\Users\Ghostface Chilla, while logged on with the breakglass account, right click and rename the userprofile folder and rename to the updated username.
+
+<h1>Step 4: Veirfy</h1>
+    Find the User profile in the filesystem is C:\Users\Test User, while logged on with the breakglass account, right click and rename the userprofile folder and rename to the updated username.
     Reboot the device
     Have customer logon and confirm that they're able to access their profile
-        a.	launch cmd and confirm the profile path is now the correct username format, run 'whoami'
+        a.  launch cmd and confirm the profile path is now the correct username format, run 'whoami'
+
+
 
 <h1>Summary:</h1>
-
+When having a username with space it can cause problems in the future because of the space in between the name "Andrew Alcaraz". In VPN it can be tricky to log on and changing the username can help fix this issue depending on your organization.
 
