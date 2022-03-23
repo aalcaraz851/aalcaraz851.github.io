@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog-18-GoToAssit"
-date:   2022-03-23 11:58:57 -0700
+date:   2022-03-22 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
