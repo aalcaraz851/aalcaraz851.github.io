@@ -1,22 +1,66 @@
 ---
 layout: post
-title:  "Blog-18-GitHub"
+title:  "Blog-18-GoToAssit"
 date:   2022-03-02 11:58:57 -0700
 categories: Munki MDM Tool
 ---
 
-<h1> GitHub</h1>
+<h1>GOTOASSIT</h1>
+GoToAssit is a cloud-based remote support platform designed and targeted at IT support teams and customer support organizations.
+This application lets you remote into a customer device when assiting them with an issue and can be very help when trying to talk them throught and issue.
 
 
-<h1>How Install GitHub</h1>
+<h1>How It GoToAssit Works</h1>
+    1. Start a support session.
+    Launch GoToAssist from your web browser, desktop or mobile device.
+    2. Invite the customer.
+    To join, customers enter a support key online or click a link you provide.
+    3. See & control the computer.
+    Screen sharing, diagnostic tools and more help you save the day.
 
-<h1>Step 1: How to Download a Repository from GitHub </h1>
 
+<h1>Step 1: Join the session  </h1>
+
+While on your Windows desktop, you can join a support session using the Support URL or Support Key provided by your agent in various ways. 
+
+If it's your first time joining a session, you will be prompted to download the GoToAssist Opener "helper" application. Once installed, the GoToAssist Customer application will launch, and you will be joined with the agent in a support session.
+If you've joined a session before and have previously installed the GoToAssist Opener "helper" application, the GoToAssist Customer application will launch you directly into a support session with the agent.
  
+Note: If prompted by the User Account Control (UAC) setting, click Yes to continue.
 
-<h1>Step 2: How to push a commit to GitHub </h1>
+Their are three way to connect when joining from your desktop:
+Support Key:
+Go to www.fastsupport.com -> Enter your name and Support Key -> Click Continue to download and run the "helper" application, or be launched immediately into session
 
+Email:
+Click the Support URL in the email invitation -> When your web browser opens, you will either be prompted to download and run the "helper" application, or be launched immediately into session
+
+GoToAssist Customer standalone app for Windows:
+Go to www.fastsupport.com/download/attended-app -> Click Download -> Click Save File -> Click on the downloaded file, then click Run to open it -> Enter your name and Support Key, then click OK to launch the GoToAssist Customer app and join the support session
+
+
+<img src="https://assets.cdngetgo.com/21/90/aef4b40d48e394d72a09321b7153/cust-attended-app.png" alt="Jira" width="460" height="345">
+
+<h1>Step 2: Share Your screen</h1>
+    Once you have joined a support session, you are prompted to share your screen with the agent and allow them to remotely control your keyboard and mouse. 
+    You can click Stop Screen Sharing on the GoToAssist Customer toolbar to stop screen sharing and remote control at any time.
+
+    When an agent's account is enabled for session recording, an additional message, "This session will be recorded" is displayed when you are prompted to join the support session.
+
+
+<img src="https://assets.cdngetgo.com/be/e2/b4d602d74390840dea5a6e606ede/screensharing.png" alt="Jira" width="460" height="345">
+
+<h1>Step 3: Share Your screen</h1>
+    During your support session, you can send files to the agent, and they can send files to you.
+    You might be prompted by User Account Control, click Yes to proceed with the file transfer. You will only be prompted once during your session. 
+
+<h1>Step 4: Using the chat agent</h1>
+You can use the chat feature on the GoToAssist Customer toolbar to send & receive chat messages during your support session with the agent.
+
+When you join, the GoToAssist Customer toolbar will be minimized. Click Chat to expand the chat window, where you can exchange messages with the agent during your support session.
+
+<img src="https://assets.cdngetgo.com/5a/6c/55a2f6ba4b42bd529f8395479a11/chatwindow.png" alt="Jira" width="460" height="345">
 
 <h1>Summary: </h1>
 
-
+This applcation can be very helpfull when working with customer in your job, family memeber, and others to help or work on any assignment. 
