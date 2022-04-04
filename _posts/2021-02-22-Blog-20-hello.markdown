@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Blog-20-ManuallyApplyingWindowsUpdate"
+date:   2022-03-22 11:58:57 -0700
+categories: Munki MDM Tool
+---
+
+<h1>Manually applying Windows Update</h1>
+GoToAssit is a cloud-based remote support platform designed and targeted at IT support teams and customer support organizations.
+This application lets you remote into a customer device when assiting them with an issue and can be very help when trying to talk them throught and issue.
+
+<img src="https://content.nexus.support.com/5b557b9559124044bb566bfc31a09c80/0556b9909c0511e98985a7546c04184c.svg" alt="Jira" width="460" height="345">
+
+    1.	Once you have confirmed the UBR number for the device via cmd prompt & CustomAttribute data in the Airwatch console are not compliant
+
+
+    
+    2.	Visit the Microsoft Release Information page to determine the latest SSU & CU updates (Service Stack Update and Cumulative Update) for Windows according to the installed OS version present on the customer device.
+    (The latest updates will not be available via Windows Update but can be downloaded from the Microsoft Update Catalog, Airwatch will not have the latest update available until the updates are released to Windows Update, so Metrics definition is never the latest update)
+    
+    3.	Click on the link for the latest update, scroll down towards the bottom to find the SSU KB-id then click the link for the Microsoft Update Catalog
+    
+    4.	Search for the updates (2, 1 Cumulative, 1 Service Stack Update) in the Update Catalog, verify that you're downloading the update for the correct OS. (Client devices are more than likely on x64, Windows 10 1903 & 1909 share the same updates.)
+    Click the Download button, in the pop up window, click on the link to download the .msu file (or right click & copy the link and message the link to the client)
+
+    Service Stack Update for 190x x64 Clients 
+    
+    Cumulative Update for 190x x64 Clients
+
+    
+    
+    5.	Double click the .msu file to install the update on the client device starting with the Service Stack Update (no reboot required) followed by the Cumulative Update.
+    (Service Stack Updates 
+    6.	Click 'Yes' when prompted to begin the install of the update.
+
+
+    
+    wait for the updates to finish installing
+    
+                
+    7.	Once the Cumulative update has finished installing, click 'Restart Now'
+    
+    8.	Once the device boots back up, log on and launch cmd prompt once more to confirm the UBR number of the OS.
+    
+    9.	Query the device from the Airwatch console & re-sync the agent in the taskbar on the device. (May take a few minutes to refresh in the console)
+        
+    10.	Confirm that the UBR is now compliant in the Airwatch Console, Device's CustomAttributes tab.
+
+<h1>Summary: </h1>

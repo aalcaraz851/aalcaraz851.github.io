@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Blog-19-RestoreSiliconMac"
+date:   2022-03-22 11:58:57 -0700
+categories: Munki MDM Tool
+---
+
+<h1>Restoring a previously deployed Silicon Mac to factory settings</h1>
+Looking for Restoring a previously deployed Intel Mac to factory settings?
+If the Mac is already on macOS 12 (Monterey) or higher, follow the instructions in Restoring a previously deployed Mac (macOS 12+) to factory settings.
+
+ <img src="https://github.com/aalcaraz851/aalcaraz851.github.io/blob/262e698b832d5c6567a1a75ae2b7f383f07b7378/_posts/2021-02-22-Blog-19-hello.markdown#L12" alt="Jira" width="460" height="345">
+ 
+    1.	Shut down the Mac.
+    2.	Make sure the Mac is plugged into power.
+    3.	Once the Mac is completely powered off, hold down the power button. After you hear the boot-up chime, you'll see Continue holding for startup options. Once you see Loading startup options, then you can release the power button.
+    4.	You should then see Macintosh HD on the left and Options on the right. Click Options, and then Continue.
+    5.	When the macOS Recovery window appears, you should see a user account. If you know the customer's password (i.e., the customer changed it from their regular password to one you can use), click the username of the customer and enter the password when prompted. If you don't know the password but know the FileVault recovery key for the Mac, click Forgot all passwords? If you don't know the customer's password or the FileVault recovery key, go to the top-left and select Recovery Assistant > Erase Mac.
+    6.	Open Disk Utility. You should see Macintosh HD and Data on the left sidebar.
+    7.	From the View menu at the top, select Show All Devices.
+    8.	Select the Container that contains both Macintosh HD and Data.
+    9.	Click Erase. Select APFS as the Format, then click the Erase button to confirm.
+    10.	Make sure (in the top-right corner) that you're connected to a wireless network.
+    11.	Close Disk Utility, and select Reinstall macOS Big Sur.
+    12.	Click Continue, then Continue again.
+    13.	Click Agree, then Agree again to confirm.
+    14.	Select Macintosh HD as the destination, then click Continue. This process may take 30 minutes to an hour. If you get a Failed to personalize the software update error, follow the instructions on If you get a personalization error when reinstalling macOS on your Mac with Apple M1 chip.
+    15.	You can now proceed with Imaging a Mac via DEP or, in very rare cases, Imaging a Mac without DEP
+
+
+
+<h1>Summary: </h1>

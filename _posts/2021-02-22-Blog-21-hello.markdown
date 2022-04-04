@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Blog-21-MacInDEP"
+date:   2022-03-22 11:58:57 -0700
+categories: Munki MDM Tool
+---
+
+<h1>Enroll AMc without dep</h1>
+Do not manually a Mac that is able to be enrolled via DEP. Always first try to DEP-enroll first, and then fall back to manual enrollment only as a last resort if DEP enrollment isn't working or DEP enrollment is available
+
+
+<img src="https://www.freeiconspng.com/uploads/ios-png-3.png" alt="Jira" width="460" height="345">
+
+<h1>Requirements</h1>
+    A Mac that has not been turned on and set up yet (e.g. "factory fresh")
+    OR a Mac that has been reset to factory configuration by performing a erase and reinstall of macOS in recovery mode
+    OR a Mac that cannot be DEP'ed, because it is part of a merger or acquisition (skip to step #10)
+    About 40 minutes
+    A fast network connection (preferably hard-wired)
+    Note: DEP enrollment isn't available in all countries. Check the Apple website for the most up-to-date list.
+
+
+    Steps
+    1.	Plug the Mac into power and Ethernet.
+    2.	Turn on the Mac.
+    3.	If the Mac is NOT factory-fresh from Apple (as indicated by booting up to a login screen instead of to the setup assistant), you'll need to erase and install macOS to restore it to factory defaults using one of the options below.
+
+    Factory Fresh or Erase and install.
+
+    4.	At the Welcome screen, select your country and click Continue.
+    5.	Select any accessibility options the customer may need. Otherwise, click Not Now.
+    
+    6.	If you haven't hardwired an ethernet connection, select a Wi-Fi network
+
+    7.	Now you should NOT see a Remote Management screen.
+    8.	Click Continue.
+    9.	Create the local account.
+    •	If you're setting up this Mac for a customer or NHO, use the customer's name and password.
+    10.	Make sure the time zone is set to update automatically based on location.
+
+    11.	You should see the Setting Up Your Mac waiting screen, followed soon by more Setup Assistant screens, and then the default macOS desktop and dock.
+    12.	Open Safari and navigate to https://sccorp.jamfcloud.com/enroll/
+    13.	Check LastPass for the latest JAMF login credentials
+    14.	This will ask to download a CA Certificate, as well as, our MDM profile
+    15.	Once downloaded please install both
+    16.	Within a minute of logging in, you should see a message that says "Welcome to your new Mac" along with a progress indicator:
+
+    If, for some reason, that does not appear but you're certain the Jamf profile is installed, run this command to manually invoke it: sudo jamf policy -event depnotifyandmunki
+
+    While this message is being displayed, software and updates are being installed. The process should take no more than 20 minutes, depending on how many updates are required.
+    17.	When the process is finished, you will see the login window with the customer account and the IT Admin account. Log in as the customer.
+    18.	Go to System Preferences > Profiles > MDM SC-CORP Profile. If you see an Approve button there, click it to approve the MDM enrollment.
+    19.	Join the Mac to Wi-Fi as you normally would.
+    20.	When you log out, you may be prompted to enable FileVault. If so, enter the customer's password.
+    21.	For newly imaged machines, we are now using Crypt for FileVault escrow instead of Jamf, so there is no longer any need to enable FileVault for the ITAdmin account.
+    22.	Then go to System Preferences > Software Updates and install any pending software updates.
+    23.	Once the updates have installed fully, and you've logged back in as the customer, go to Applications > Utilities > Terminal and run the command sudo managedsoftwareupdate --auto && sudo killall jamf; sudo jamf policy && sudo jamf recon
+    24.	Once that command completes, shut down the Mac.
+    The Mac is now ready to deploy to the customer.
+
+
+<h1>Summary: </h1>
