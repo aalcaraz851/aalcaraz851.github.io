@@ -9,7 +9,7 @@ categories: Munki MDM Tool
 Looking for Restoring a previously deployed Intel Mac to factory settings?
 If the Mac is already on macOS 12 (Monterey) or higher, follow the instructions in Restoring a previously deployed Mac (macOS 12+) to factory settings.
 
- <img src="https://github.com/aalcaraz851/aalcaraz851.github.io/blob/262e698b832d5c6567a1a75ae2b7f383f07b7378/_posts/2021-02-22-Blog-19-hello.markdown#L12" alt="Jira" width="460" height="345">
+ <img src="https://i0.wp.com/whatvwant.com/wp-content/uploads/2020/09/Factory-Reset-MacBook.jpg" alt="Jira" width="460" height="345">
  
     1.	Shut down the Mac.
 
@@ -46,4 +46,4 @@ If the Mac is already on macOS 12 (Monterey) or higher, follow the instructions 
 
 
 <h1>Summary: </h1>
-What we learned here is how the imaging process helps clean the laptop safely, this can help when on borading new empolyees or a new laptop erased.
+What we learned here is how the imaging process help clean the laptop safely, this can help when on borading new empolyees or a new laptop erased.
