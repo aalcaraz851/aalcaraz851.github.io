@@ -11,6 +11,7 @@ Manually applying Windows Updates is a an important technique when applying a ne
 <img src="https://content.nexus.support.com/5b557b9559124044bb566bfc31a09c80/0556b9909c0511e98985a7546c04184c.svg" alt="Jira" width="460" height="345">
 
     1.	Once you have confirmed the UBR number for the device via cmd prompt 
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Command_Prompt_on_Windows_10_RTM.png" alt="Jira" width="460" height="345">
 
     2.	Visit the Microsoft Release Information page to determine the latest SSU & CU
@@ -19,6 +20,7 @@ Manually applying Windows Updates is a an important technique when applying a ne
     (The latest updates will not be available via Windows Update but can be downloaded 
     from the Microsoft Update Catalog, Airwatch will not have the latest update available 
     until the updates are released to Windows Update, so Metrics definition is never the latest update)
+    
 <a href="https://docs.microsoft.com/en-us/windows/release-health/release-information">Microsoft Release Information</a>
 
     3.	Click on the link for the latest update, scroll down towards the bottom to find 
