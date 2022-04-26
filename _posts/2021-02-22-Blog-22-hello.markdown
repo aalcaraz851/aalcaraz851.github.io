@@ -43,12 +43,16 @@ categories: Munki MDM Tool
     When you run Startup Disk Creator, it will check for ISO files in your Downloads folder 
     as well as any attached USB storage that may be written to.
 
-    Both your Ubuntu ISO and the right USB drive were most likely recognized and set as 'Source disc image' and 'Disk to use' in the application window. If not, use the 'Other' button to locate your ISO file and then choose the specific USB device from the list of devices.
+    Both your Ubuntu ISO and the right USB drive were most likely recognized and set as 
+    'Source disc image' and 'Disk to use' in the application window. If not, use the 
+    'Other' button to locate your ISO file and then choose the specific USB device from the list of devices.
 
     To begin the process, click Make Startup Disk.
 
     5. Verify the USB device
-    You'll be prompted to confirm the USB device you've selected is correct before making any irreversible changes. This is critical since all data currently stored on the device will be wiped clean.
+    You'll be prompted to confirm the USB device you've selected is correct before making 
+    any irreversible changes. This is critical since all data currently stored on the device 
+    will be wiped clean.
 
 
     The writing process will begin after you confirm, and a progress meter will show.
