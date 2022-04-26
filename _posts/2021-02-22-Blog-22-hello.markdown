@@ -16,43 +16,48 @@ categories: Munki MDM Tool
     Without affecting your PC's setup, try out the Ubuntu desktop experience.
     Start Ubuntu on a borrowed computer or from an internet cafe.
     To repair or fix a faulty setup, use the tools that are pre-installed on the USB stick.
-    Creating a bootable Ubuntu USB stick is a simple task, especially from within Ubuntu, and we'll go through it in the following steps.
+    Creating a bootable Ubuntu USB stick is a simple task, especially from within Ubuntu, 
+    and we'll go through it in the following steps.
 
-    Alternatively, we have guides for both Microsoft Windows and Apple macOS to help you construct a bootable USB stick.
+    Alternatively, we have guides for both Microsoft Windows and Apple macOS 
+    to help you construct a bootable USB stick.
 
-2. Fundamentals
-You'll need:
+    2. Fundamentals
+    You'll need:
 
-A USB stick/flash drive with a capacity of 4GB or greater
-An Ubuntu ISO file was installed on Ubuntu Desktop 14.04 or later. Download links can be found at Get Ubuntu.
+    A USB stick/flash drive with a capacity of 4GB or greater
+    An Ubuntu ISO file was installed on Ubuntu Desktop 14.04 or later. Download links can be found at Get Ubuntu.
 
     3. Start Startup Disk Creator.
-To write the ISO image to your USB stick, we'll use a program named 'Startup Disk Creator.' This is pre-installed in Ubuntu and can be launched as follows:
+    To write the ISO image to your USB stick, we'll use a program 
+    named 'Startup Disk Creator.' This is pre-installed in Ubuntu and can be launched as 
+    follows:
 
-Insert your USB stick (if prompted by Ubuntu, select 'Do nothing').
-Use the bottom left icon to open 'Show Applications' on Ubuntu 18.04 and later.
-To open the dash on older versions of Ubuntu, use the top left icon.
-Look for Startup Disk Creator in the search field.
-To open the application, choose Startup Disk Creator from the list of results.
+    Insert your USB stick (if prompted by Ubuntu, select 'Do nothing').
+    Use the bottom left icon to open 'Show Applications' on Ubuntu 18.04 and later.
+    To open the dash on older versions of Ubuntu, use the top left icon.
+    Look for Startup Disk Creator in the search field.
+    To open the application, choose Startup Disk Creator from the list of results.
 
-   4. ISO and USB device selection
-When you run Startup Disk Creator, it will check for ISO files in your Downloads folder as well as any attached USB storage that may be written to.
+    4. ISO and USB device selection
+    When you run Startup Disk Creator, it will check for ISO files in your Downloads folder 
+    as well as any attached USB storage that may be written to.
 
-Both your Ubuntu ISO and the right USB drive were most likely recognized and set as 'Source disc image' and 'Disk to use' in the application window. If not, use the 'Other' button to locate your ISO file and then choose the specific USB device from the list of devices.
+    Both your Ubuntu ISO and the right USB drive were most likely recognized and set as 'Source disc image' and 'Disk to use' in the application window. If not, use the 'Other' button to locate your ISO file and then choose the specific USB device from the list of devices.
 
-To begin the process, click Make Startup Disk.
+    To begin the process, click Make Startup Disk.
 
-5. Verify the USB device
-You'll be prompted to confirm the USB device you've selected is correct before making any irreversible changes. This is critical since all data currently stored on the device will be wiped clean.
-
-
-The writing process will begin after you confirm, and a progress meter will show.
-
-6. The installation is now complete.
-
-That concludes our discussion. Ubuntu is now bootable and ready to use on a USB stick.
+    5. Verify the USB device
+    You'll be prompted to confirm the USB device you've selected is correct before making any irreversible changes. This is critical since all data currently stored on the device will be wiped clean.
 
 
+    The writing process will begin after you confirm, and a progress meter will show.
 
-Take a look at our install Ubuntu desktop instruction if you want to get started.
+    6. The installation is now complete.
+
+    That concludes our discussion. Ubuntu is now bootable and ready to use on a USB stick.
+
+
+
+    Take a look at our install Ubuntu desktop instruction if you want to get started.
 
